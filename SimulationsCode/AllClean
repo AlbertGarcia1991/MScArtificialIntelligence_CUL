@@ -1,0 +1,19 @@
+########################################################################################################################
+#                                  DEEP NEURAL NETWORKS FOR AERODYNAMIC LOW PREDICTION                                 #
+#                                             Student: Albert García Plaza                                             #
+#                                              Supervisor: Eduardo Alonso                                              #
+#                                               INM363 Individual project                                              #
+#                              MSc in Artificial Intelligence - City, University of London                             #
+########################################################################################################################
+
+#!/bin/sh
+cd ${0%/*} || exit 1        # Run from this directory
+
+rm -rf constant/polyMesh    # Clean mesh files
+rm -rf *[1-9]*              # Clean all outputs
+rm -rf processor0           # Clean all multi-processor threads
+rm -f log.*                 # Clear all log files
+rm -f 0/C                   # Clear initial conditions files
+rm -f 0/C*
+
+#------------------------------------------------------------------------------
